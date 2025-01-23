@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 My Character</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <h1>P A N D A M A N</h1>
+    <h2>the hero</h2>
+    <img src="img/panda vector_Siyuan Song.svg" alt="">
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, magni ullam provident rerum repellat nam soluta, odio facilis mollitia id reiciendis iure cumque quam labore minus minima nobis sequi. Dolores dolorem inventore tenetur minima? Delectus, hic nostrum quaerat quod iure deserunt, ullam facere provident id suscipit unde assumenda perspiciatis eius! Quasi deleniti optio ducimus velit nemo, corporis dolores, vero, deserunt ipsum autem incidunt molestiae quisquam dolorum nisi officiis quidem perspiciatis. Alias vel delectus quidem enim eveniet fugiat atque ipsa laboriosam quae nemo officia nobis iste doloremque sed explicabo, eum architecto natus pariatur harum tempore, officiis deserunt! Molestias ad fugit sunt.
+    </p>
+
+    <h3>The Design Process</h3>
+    <img class="screenshots"  src="img/Screenshot 2024-11-21 at 4.26.01 PM.png" alt="">
+
+    <button id="game" onclick="top.location.href = '../project3/index.html'">Play Game!</button>
+    <div id="panel">click to open</div>
+
+
+
+    <script>
+
+        const panel = document.getElementById("panel");
+        const sound = new Audio("dark-future-logo-196217 (1).mp3");
+        
+        panel.onclick = function() {
+            this.classList.toggle("slide-up");
+            sound.play();
+        }
+
+    </script>    
+    
+</body>
+</html>

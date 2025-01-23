@@ -1,0 +1,60 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "League Script", cursive;
+    /* 3d */
+    perspective: 350px;
+    padding-top: 66px;
+}
+    img {
+        width: 400px;
+    }
+
+
+#panel{
+    /* align-content: center; */
+    padding-top: 5%;
+    position: absolute;
+    z-index: 10;
+    top:0px;
+    left: opx;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* 3d stuff */
+    transform-style: preserve-3d;
+}
+.slide-up{
+    transform: translateY(-50%) rotateX(70deg);
+    /* transform: translateY(-90vh); */
+}
+.screenshots {
+    width: 70%;
+    display: inline-block;
+}
+h3{
+    font-size: 2em;
+}
+#game {
+    padding: 10px;
+    font-size: 2.4em;
+    background: greenyellow;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 20px goldenrod;
+    cursor: pointer;
+    display: inline-block;
+}
+#game:hover {
+    background-color: aquamarine;
+    rotate: 180deg;
+}

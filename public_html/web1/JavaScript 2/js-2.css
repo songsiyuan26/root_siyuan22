@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background:yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+    top: 42px;
+    left: 210px;
+    transition: all 0.4s ease-in;
+
+  }
+  #pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+  }
+
+  #pentagon.change-me{
+    border-color: blue transparent;
+    /* left:300px; */
+    /* translate: 300px; */
+    transform: translateX(300px) scale(2.4) rotate(33deg) skewX(12px);
+  }
+  #pentagon.change-me:before{
+    border-color: transparent transparent blue;
+  }
+
+  /* .change-me{
+    border-color: blue transparent !important;
+  } */

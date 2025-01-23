@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in;
+}
+
+.square{
+    border-radius: unset;
+}
+.circle.move-me{
+    transform: translate(200px);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Demo 1</title>
+</head>
+<body>
+    <hi>JavaScript - Demo 1</hi>
+
+<button onclick="eatpizza()">Click me</button>
+<main id="content"></main>
+    <style>
+        body{background-color: rgb(35, 110, 176);}
+    </style>
+
+<head>
+    <body>
+        <h1>
+            JavaScript _ Demo 1
+        </h1>
+
+        <script>
+            alert('hello word :)');
+            console.log("Page loaded successfully");
+
+            // Variables
+            // dynamic variable type "let" (data can be changed)
+
+            let myName = "Siyuan"
+
+            myName = "Michael"
+
+            console.log(myName);
+            // constant variable (data can't be changed)
+            const pi = 3.14159
+
+            console.log(pi * 5); 
+
+            /// mixed message logging
+            //uses + to concatenate strings with other string or
+            //String = textual data, in quotes
+
+            console.log("Pi time 5" + pi*5);
+
+            let mySound = new Audio ("woman-laugh-6421.mp3");
+
+            const myContent = document.getElementById("content");
+
+    
+        function eatpizza() {
+            alert("🫨");
+            mySound.play();
+            myContent.innerHTML = "Get Out"
+        }
+
+
+
+
+        </script>
+    </body>
+</head>
+</body>
+</html>
