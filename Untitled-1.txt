@@ -1,2 +1,0 @@
-git config --global user.name "songsiyuan26"
-git config --global user.email 2487422@edu.vaniercollege.qc.ca

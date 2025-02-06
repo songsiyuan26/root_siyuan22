@@ -1,0 +1,224 @@
+/* General Styles */
+
+:root {
+
+    --primary-color: #003366;
+    /* Blue Theme */
+
+    --secondary-color: #f4f4f4;
+
+    --text-color: #333;
+
+}
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+}
+
+
+
+header {
+
+    background: var(--primary-color);
+
+    color: #fff;
+
+    padding: 1rem 2rem;
+
+}
+
+
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 1rem;
+
+}
+
+
+
+.nav-links a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+}
+
+
+
+.menu-toggle {
+
+    display: none;
+
+}
+
+
+
+#hero {
+
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 4rem 1rem;
+
+}
+
+
+
+#hero .cta {
+
+    display: inline-block;
+
+    margin-top: 1rem;
+
+    padding: 0.5rem 1rem;
+
+    background: #fff;
+
+    color: var(--primary-color);
+
+    border: none;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+}
+
+
+
+#about,
+
+#skills,
+
+#projects,
+
+#contact {
+
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+}
+
+
+
+.skills-list {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+}
+
+
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 1rem;
+
+}
+
+
+
+.project-card {
+
+    background: var(--secondary-color);
+
+    padding: 1rem;
+
+    border: 1px solid #ddd;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background: var(--primary-color);
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 1rem 0;
+
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+
+        display: block;
+
+        background: none;
+
+        border: none;
+
+        color: #fff;
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    .nav-links {
+
+        flex-direction: column;
+
+        display: none;
+
+    }
+
+
+
+    .nav-links.show {
+
+        display: flex;
+
+    }
+
+}

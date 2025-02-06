@@ -1,0 +1,175 @@
+/* General Variables and Resets */
+
+:root {
+
+    --primary-color: #1a374d;
+
+    --secondary-color: #406882;
+
+    --accent-color: #b1d0e0;
+
+    --text-color: #f4f4f4;
+
+}
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Georgia', serif;
+
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+}
+
+
+
+/* Header */
+
+header {
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+}
+
+
+
+header h1 {
+
+    font-size: 2rem;
+
+    color: var(--accent-color);
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Image Transition */
+
+.image-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 60vh;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+.image-wrapper {
+
+    position: relative;
+
+    width: 300px;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    border: 5px solid var(--accent-color);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+    transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+
+}
+
+
+
+.image-wrapper:hover {
+
+    transform: rotate(5deg) scale(1.1);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+.transition-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 1.5s ease, filter 1.5s ease;
+
+}
+
+
+
+.image-wrapper:hover .transition-image {
+
+    transform: scale(1.2) rotate(-3deg);
+
+    filter: sepia(30%) brightness(1.1) contrast(1.2);
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 2rem;
+
+    text-align: center;
+
+    color: var(--text-color);
+
+}
+
+
+
+footer p {
+
+    font-size: 0.9rem;
+
+    opacity: 0.8;
+
+}
